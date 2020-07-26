@@ -11,14 +11,13 @@
              x:Class="F1.Views.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <CollectionView ItemsSource="{Binding Drivers}"
-                           >
+            <CollectionView ItemsSource="{Binding Drivers}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame>
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="{Binding Name}"/>
-                                    <Label Text="{Binding Team}"/>
+                                    <Label Text="{Binding Team.Name}"/>
                                     <Label Text="{Binding Point}"/>
                                 </StackLayout>
                         </Frame>
