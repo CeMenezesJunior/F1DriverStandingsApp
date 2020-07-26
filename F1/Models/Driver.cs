@@ -7,7 +7,7 @@ namespace F1.Models
     {
         public string Name { get; set; }
         public int Point { get; set; }
-        public string Team { get; set; }
-        
+        public Team Team { get; set; }
+        public string Country { get; set; }
     }
 }

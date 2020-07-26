@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace F1.Views
 {
-    public partial class ConstrutoresPage : ContentPage
+    public partial class ConstructorPage : ContentPage
     {
-        public ConstrutoresPage()
+        public ConstructorPage()
         {
             InitializeComponent();
         }

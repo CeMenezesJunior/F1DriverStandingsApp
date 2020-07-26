@@ -34,6 +34,7 @@ namespace F1
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<MenuIniciar, MenuIniciarViewModel>();
+            containerRegistry.RegisterForNavigation<ConstructorPage, ConstructorPageViewModel>();
         }
 
         protected override async void OnInitialized()

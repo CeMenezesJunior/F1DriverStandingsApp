@@ -12,10 +12,7 @@ namespace F1.ViewModels
         public MainPageViewModel(INavigationService navigationService):
             base(navigationService)
         {
-            InsereDrivers();
-            InsereAustria1();
-            InsereAustria2();
-            Drivers = Drivers.OrderByDescending(p => p.Point).ToList();
+
         }
         
     }
