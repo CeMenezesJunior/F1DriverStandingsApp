@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="F1.Views.MenuIniciar">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center">
+            <Button Text="Mundial de Pilotos"
+                    Command="{Binding MPilotos}"/>
+            <Button Text="Mundial de contrutores"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
