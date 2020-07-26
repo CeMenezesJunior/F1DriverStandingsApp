@@ -17,6 +17,7 @@ namespace F1.ViewModels
         {
             Drivers = new List<Driver>();
             Drivers = App.Season2020.DriversStanding;
+        
         }
         
     }

@@ -31,7 +31,7 @@ namespace F1.Services
                 new Driver{ Name="Leclerc", Team=Teams.Where(p=>p.Name=="Ferrari").FirstOrDefault(), Point=0},//2
                 new Driver{ Name="Vettel", Team=Teams.Where(p=>p.Name=="Ferrari").FirstOrDefault(), Point=0},//3
                 new Driver{ Name="Verstappen", Team=Teams.Where(p=>p.Name=="Red Bull").FirstOrDefault(), Point=0},//4
-                new Driver{ Name="Albol", Team=Teams.Where(p=>p.Name=="Red Bull").FirstOrDefault(), Point=0},//5
+                new Driver{ Name="Albon", Team=Teams.Where(p=>p.Name=="Red Bull").FirstOrDefault(), Point=0},//5
                 new Driver{ Name="Ricciardo", Team=Teams.Where(p=>p.Name=="Renault").FirstOrDefault(), Point=0},//6
                 new Driver{ Name="Ocon", Team=Teams.Where(p=>p.Name=="Renault").FirstOrDefault(), Point=0},//7
                 new Driver{ Name="Raikkonen", Team=Teams.Where(p=>p.Name=="Alfa Romeo").FirstOrDefault(), Point=0},//8

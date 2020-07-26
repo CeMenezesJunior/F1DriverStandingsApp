@@ -6,6 +6,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="True"
+             Title="Drivers Standing"
              NavigationPage.HasNavigationBar="True"
              mc:Ignorable="d"
              x:Class="F1.Views.MainPage">
@@ -16,9 +17,9 @@
                     <DataTemplate>
                         <Frame>
                                 <StackLayout Orientation="Horizontal">
-                                    <Label Text="{Binding Name}"/>
-                                    <Label Text="{Binding Team.Name}"/>
-                                    <Label Text="{Binding Point}"/>
+                                    <Label Text="{Binding Name}" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Team.Name}" FontAttributes="Italic"/>
+                                    <Label Text="{Binding Point}" TextColor="Red"/>
                                 </StackLayout>
                         </Frame>
                     </DataTemplate>
