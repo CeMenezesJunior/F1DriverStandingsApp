@@ -11,6 +11,11 @@ namespace F1.ViewModels
         DelegateCommand _mPilotos;
         public DelegateCommand MPilotos => _mPilotos
             ?? (_mPilotos = new DelegateCommand(async () => await ExecuteMPilotos()));
+
+        DelegateCommand _mConstructor;
+        public DelegateCommand MConstructors => _mConstructor
+            ?? (_mConstructor = new DelegateCommand(async () => await ExecuteMConstructor()));
+
         public MenuIniciarViewModel(INavigationService navigationService) :
             base(navigationService)
         {
@@ -18,6 +23,10 @@ namespace F1.ViewModels
         private async Task ExecuteMPilotos()
         {
             await navigationService.NavigateAsync(nameof(MainPage));
+        }
+        private async Task ExecuteMConstructor()
+        {
+            await navigationService.NavigateAsync(nameof(ConstructorPage));
         }
     }
 }

@@ -16,6 +16,7 @@ namespace F1.Services
         {
             var TeD = new TeamsAndDrivers();
             var ListDrivers = TeD.Drivers;
+            var Teams = TeD.Teams;
             AustriaGP = AddRace(AustriaGP,
                                     ListDrivers.Where(p => p.Name == "Bottas").FirstOrDefault(),
                                     ListDrivers.Where(p => p.Name == "Leclerc").FirstOrDefault(),
@@ -58,6 +59,8 @@ namespace F1.Services
             _races.Add(HungaryGP);
             Season = new Season("2020", _races);
             Season.DriversStanding = ListDrivers.OrderByDescending(p => p.Point).ToList();
+            new TeamPoints(Season.DriversStanding, Teams);
+            Season.TeamStanding = Teams.OrderByDescending(p => p.Points).ToList();
             
         }
         private Race AddRace(Race race,Driver p1, Driver p2, Driver p3, Driver p4, Driver p5, Driver p6, Driver p7, Driver p8, Driver p9, Driver p10, Driver fastlap)

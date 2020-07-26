@@ -1,8 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="True"
+             Title="Constructor Standing"
+             NavigationPage.HasNavigationBar="True"
              x:Class="F1.Views.ConstructorPage">
     <ContentPage.Content>
-
+        <StackLayout>
+             <CollectionView ItemsSource="{Binding Teams}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Name}" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Points}" TextColor="Red"/>
+                                </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

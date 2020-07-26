@@ -8,7 +8,8 @@
                      HorizontalOptions="Center">
             <Button Text="Mundial de Pilotos"
                     Command="{Binding MPilotos}"/>
-            <Button Text="Mundial de contrutores"/>
+            <Button Text="Mundial de contrutores"
+                    Command="{Binding MConstructors}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
