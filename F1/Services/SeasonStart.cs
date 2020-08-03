@@ -12,6 +12,7 @@ namespace F1.Services
         private Race AustriaGP { get; set; }
         private Race StyrianGP { get; set; }
         private Race HungaryGP { get; set; }
+        private Race BritishGP { get; set; }
         public SeasonHandle()
         {
             var TeD = new TeamsAndDrivers();
@@ -53,10 +54,23 @@ namespace F1.Services
                                 ListDrivers.Where(p => p.Name == "Sainz").FirstOrDefault(),
                                 ListDrivers.Where(p => p.Name == "Magnussen").FirstOrDefault(),
                                 ListDrivers.Where(p => p.Name == "Hamilton").FirstOrDefault());
+            BritishGP = AddRace(BritishGP,
+                ListDrivers.Where(p => p.Name == "Hamilton").FirstOrDefault(),
+                ListDrivers.Where(p => p.Name == "Verstappen").FirstOrDefault(),
+                ListDrivers.Where(p => p.Name == "Leclerc").FirstOrDefault(),
+                ListDrivers.Where(p => p.Name == "Ricciardo").FirstOrDefault(),
+                ListDrivers.Where(p => p.Name == "Norris").FirstOrDefault(),
+                ListDrivers.Where(p => p.Name == "Ocon").FirstOrDefault(),
+                ListDrivers.Where(p => p.Name == "Gasly").FirstOrDefault(),
+                ListDrivers.Where(p => p.Name == "Albon").FirstOrDefault(),
+                ListDrivers.Where(p => p.Name == "Stroll").FirstOrDefault(),
+                ListDrivers.Where(p => p.Name == "Vettel").FirstOrDefault(),
+                ListDrivers.Where(p => p.Name == "Verstappen").FirstOrDefault());
             _races = new List<Race>();
             _races.Add(AustriaGP);
             _races.Add(StyrianGP);
             _races.Add(HungaryGP);
+            _races.Add(BritishGP);
             Season = new Season("2020", _races);
             Season.DriversStanding = ListDrivers.OrderByDescending(p => p.Point).ToList();
             new TeamPoints(Season.DriversStanding, Teams);
