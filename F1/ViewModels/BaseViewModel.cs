@@ -23,13 +23,13 @@ namespace F1.ViewModels
             set { SetProperty(ref isBusy, value); }
         }
 
-        protected readonly INavigationService navigationService;
+        protected readonly INavigationService NavigationService;
 
         public event EventHandler IsActiveChanged;
 
         public BaseViewModel(INavigationService navigationService)
         {
-            this.navigationService = navigationService;
+            this.NavigationService = navigationService;
         }
         string title = string.Empty;
         public string Title

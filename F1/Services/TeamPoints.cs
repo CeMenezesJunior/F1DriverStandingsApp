@@ -19,8 +19,13 @@ namespace F1.Services
                     {
                         team.Points = team.Points + driver.Point;
                         cont++;
-                        if (cont == 2)
+                        if (cont == 2 && team.Name!="Racing Point")
                             break;
+                        else if(team.Name == "Racing Point" && cont == 3)
+                        {
+                            team.Points = team.Points - 15;
+                            break;
+                        }
                     }
                 }
             }

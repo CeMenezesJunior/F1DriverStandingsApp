@@ -22,11 +22,11 @@ namespace F1.ViewModels
         }
         private async Task ExecuteMPilotos()
         {
-            await navigationService.NavigateAsync(nameof(MainPage));
+            await NavigationService.NavigateAsync(nameof(MainPage));
         }
         private async Task ExecuteMConstructor()
         {
-            await navigationService.NavigateAsync(nameof(ConstructorPage));
+            await NavigationService.NavigateAsync(nameof(ConstructorPage));
         }
     }
 }

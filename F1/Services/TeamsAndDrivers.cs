@@ -44,6 +44,7 @@ namespace F1.Services
                 new Driver{ Name="Sainz", Team=Teams.Where(p=>p.Name=="McLaren").FirstOrDefault(), Point=0},//15
                 new Driver{ Name="Perez", Team=Teams.Where(p=>p.Name=="Racing Point").FirstOrDefault(), Point=0},//16
                 new Driver{ Name="Stroll", Team=Teams.Where(p=>p.Name=="Racing Point").FirstOrDefault(), Point=0},//17
+                new Driver{ Name="Hulkenberg", Team=Teams.Where(p=>p.Name=="Racing Point").FirstOrDefault(), Point=0},
                 new Driver{ Name="Russell", Team=Teams.Where(p=>p.Name=="Williams").FirstOrDefault(), Point=0},//18
                 new Driver{ Name="Latifi", Team=Teams.Where(p=>p.Name=="Williams").FirstOrDefault(), Point=0}//19
             };

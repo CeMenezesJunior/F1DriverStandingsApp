@@ -8,6 +8,7 @@
              x:Class="F1.Views.ConstructorPage">
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Constructors Standing 2020" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold"/>
              <CollectionView ItemsSource="{Binding Teams}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>

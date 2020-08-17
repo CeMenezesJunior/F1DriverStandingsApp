@@ -7,11 +7,12 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="True"
              Title="Drivers Standing"
-             NavigationPage.HasNavigationBar="True"
+             NavigationPage.HasNavigationBar="False"
              mc:Ignorable="d"
              x:Class="F1.Views.MainPage">
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Drivers Standing 2020" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold"/>
             <CollectionView ItemsSource="{Binding Drivers}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
