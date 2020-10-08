@@ -47,16 +47,16 @@ namespace F1.ViewModels
             throw new NotImplementedException();
         }
 
-        public void OnNavigatedFrom(INavigationParameters parameters)
+        public virtual void OnNavigatedFrom(INavigationParameters parameters)
         {
             throw new NotImplementedException();
         }
 
-        public void OnNavigatedTo(INavigationParameters parameters)
+        public virtual void OnNavigatedTo(INavigationParameters parameters)
         {
             throw new NotImplementedException();
         }
 
-        public Task InitializeAsync(INavigationParameters parameters) => Task.CompletedTask;
+        public virtual Task InitializeAsync(INavigationParameters parameters) => Task.CompletedTask;
     }
 }
